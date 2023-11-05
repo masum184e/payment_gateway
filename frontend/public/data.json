@@ -1,0 +1,23 @@
+{
+  "user_id": "12345",
+  "items": [
+    {
+      "product_id": "A123",
+      "name": "Example Product 1",
+      "price": 19.99,
+      "quantity": 2
+    },
+    {
+      "product_id": "B456",
+      "name": "Sample Product 2",
+      "price": 29.99,
+      "quantity": 1
+    },
+    {
+      "product_id": "C789",
+      "name": "Test Product 3",
+      "price": 14.99,
+      "quantity": 3
+    }
+  ]
+}
