@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineDoubleLeft } from 'react-icons/ai'
 
-const App = () => {
+const SSLCOMERZ = () => {
   const [cartData, setCartData] = useState([])
   const [discount, setDiscount] = useState(0);
   const [coupon, setCoupon] = useState("");
@@ -106,4 +106,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default SSLCOMERZ;
