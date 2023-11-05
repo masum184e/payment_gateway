@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -8,8 +8,8 @@ const NavBar = () => {
           <h2 className="font-bold text-4xl text-white">Payment Gateway</h2>
         </div>
         <ul className="flex gap-4 items-center">
-          <li className="underline text-xl text-white font-semibold"><Link to="/stripe-checkout">Stripe Checkout</Link></li>
-          <li className="underline text-xl text-white font-semibold"><Link to="/sslcomerz">SSLCOMERZ</Link></li>
+          <li className="text-xl text-white font-semibold"><NavLink className={({ isActive }) => isActive ? "text-[#FF444A]" : ""} to="/stripe-checkout">Stripe Checkout</NavLink></li>
+          <li className="text-xl text-white font-semibold"><NavLink className={({ isActive }) => isActive ? "text-[#FF444A]" : ""} to="/sslcomerz">SSLCOMERZ</NavLink></li>
         </ul>
       </div>
     </nav>
