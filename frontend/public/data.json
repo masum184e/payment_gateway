@@ -3,21 +3,24 @@
   "items": [
     {
       "product_id": "A123",
-      "name": "Example Product 1",
+      "name": "Football",
       "price": 19.99,
-      "quantity": 2
+      "quantity": 2,
+      "image":"https://img.freepik.com/free-vector/soccer-ball-realistic-white-black-picture_1284-8506.jpg?w=740&t=st=1699195875~exp=1699196475~hmac=04459ac8682e566404fcc36aa1a7df1c1605004f6182bc1748105df85b100772"
     },
     {
       "product_id": "B456",
-      "name": "Sample Product 2",
+      "name": "Cricket Ball",
       "price": 29.99,
-      "quantity": 1
+      "quantity": 1,
+      "image":"https://img.freepik.com/free-photo/cricket-ball-isolated_53876-17944.jpg?w=996&t=st=1699196001~exp=1699196601~hmac=7a533eb02d15794c66de92ed80b56b3648c003908c8625a810805abd893d5980"
     },
     {
       "product_id": "C789",
-      "name": "Test Product 3",
+      "name": "Tennis Ball",
       "price": 14.99,
-      "quantity": 3
+      "quantity": 3,
+      "image":"https://img.freepik.com/free-photo/yellow-tenis-ball_144627-21443.jpg?w=740&t=st=1699196088~exp=1699196688~hmac=cb66c168c0db35c373f5c6af4ec1f44c0987eef69446476c0778612a0bc8fb0c"
     }
   ]
 }
