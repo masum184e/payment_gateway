@@ -19,6 +19,28 @@ const App = () => {
       alert("please type `FRIDAY`")
     }
   }
+  const handleCheckOut = () => {
+    const data = {
+      userId: "ASH2125033M",
+      name: "Masum Billah",
+      address: "Jashore, Bangladesh",
+      products: cartData,
+      subtotal: total,
+      discount: discount,
+      total: total - discount
+    };
+
+    fetch("http://localhost:4000/payment", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data)
+      location.replace(data.url)
+    })
+  }
   return (
     <div className="flex min-h-screen">
       <div className="w-3/4 p-8">
@@ -77,7 +99,7 @@ const App = () => {
           <button type="submit" className="bg-green-400 w-1/4 inline-block rounded-r font-semibold py-1 text-lg">Apply</button>
         </form>
         <div className="pr-8">
-          <button className="bg-green-400 uppercase w-full rounded font-semibold text-lg py-2 mt-8">Checkout</button>
+          <button onClick={handleCheckOut} className="bg-green-400 uppercase w-full rounded font-semibold text-lg py-2 mt-8">Checkout</button>
         </div>
       </div>
     </div>
