@@ -17,7 +17,7 @@ const PORT = process.env.PORT;
 const client = new MongoClient(process.env.DATABASE_URL);
 const run = async () => {
   try {
-    const orderCollection = client.db("payment_gateway").collection("orders");
+    const orderCollection = client.db("sslcomerz_payment_gateway").collection("orders");
 
     app.get("/", async (req, res) => {
       res.send("Server is Running")
