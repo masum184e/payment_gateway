@@ -37,7 +37,7 @@ const run = async () => {
       }));
 
       const session = await stripeInstance.checkout.sessions.create({
-        payment_method_types: ['card'],
+        payment_method_types: ['card','paypal'],
         line_items,
         mode: 'payment',
         success_url: `${process.env.CLIENT_DOMAIN}`,
