@@ -10,6 +10,7 @@ const NavBar = () => {
         <ul className="flex gap-4 items-center">
           <li className="text-xl text-white font-semibold"><NavLink className={({ isActive }) => isActive ? "text-[#FF444A]" : ""} to="/stripe-checkout">Stripe Checkout</NavLink></li>
           <li className="text-xl text-white font-semibold"><NavLink className={({ isActive }) => isActive ? "text-[#FF444A]" : ""} to="/sslcomerz">SSLCOMERZ</NavLink></li>
+          <li className="text-xl text-white font-semibold"><NavLink className={({ isActive }) => isActive ? "text-[#FF444A]" : ""} to="/bookey">Bookey</NavLink></li>
         </ul>
       </div>
     </nav>
